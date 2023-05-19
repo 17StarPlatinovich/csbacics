@@ -1,0 +1,74 @@
+***WARNING: THIS CODE IS ERRONEOUS AT BEST AND IS PENDING AN AMEND***
+ORG 0x30
+
+INPUT:
+IN 0x19
+AND X
+BEQ INPUT
+IN 0x18
+ST (SP+1)
+RET
+ORG 0x50
+OUTPUT:
+IN 0xD
+AND X
+BEQ OUTPUT
+LD (ADDR1)+
+OUT 0xC
+LOOP CNT
+JUMP OUTPUT
+end1: HLT
+
+ORG 0x70
+CNT: WORD 0
+X: WORD 0x40
+STOP_WORD: WORD 0x2E
+inp: WORD $INPUT
+ADDR: WORD 0x100
+ADDR1: WORD 0x100
+outp: WORD $OUTPUT
+koi: WORD $KOI
+ORG 0x0
+
+START: CLA
+AND (CNT)+
+PUSH
+CALL (inp)
+CALL (koi)
+POP
+ST (ADDR)+
+CMP STOP_WORD
+BEQ out1
+JUMP START
+out1: CALL (outp)
+KOI:
+ORG 0x228
+LD (SP+1)
+CMP Cyrillic
+BLT SAVE
+CMP Hard_sign
+BGE Capital
+CMP Soft_sign_upper
+BEQ Case_soft
+JUMP SAVE
+Capital: 
+SUB #96
+SUB #64
+JUMP SAVE
+Minuscule:
+SUB #96
+CMP Soft_sign
+BEQ Case_soft
+CMP Hard_sign
+BEQ Case_hard
+JUMP SAVE
+Case_soft: LD #27
+JUMP SAVE
+Case_hard: LD #22
+JUMP SAVE
+SAVE: ST (SP+1)
+RET
+Cyrillic: WORD 0xC0
+Soft_sign: WORD 0xD8
+Hard_sign: WORD 0xDF
+Soft_sign_upper: WORD 0xF8
