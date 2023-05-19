@@ -34,7 +34,7 @@ PROG:	EI
 SLP:	EI	
 	LD $X
 	DI	
-	INC	
+	ADD #1
 	CMP $L	 
 	BLT MIN	
 	CMP $R	
@@ -53,7 +53,7 @@ INT1:	DI
 	NEG
 	SUB #5	
 	OUT 2	
-	NOP	
+	HLT	
 	IRET	
 INT2:	DI	
 	CLA
@@ -65,9 +65,9 @@ INT2:	DI
 	CMP $R	
 	BGE INF	
 	ST $X	
-	NOP	
+	HLT	
 	IRET	
 INF:	LD $L	
 	ST $X	
-	NOP	
+	HLT	
 	IRET
