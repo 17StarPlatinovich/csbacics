@@ -58,7 +58,6 @@ INT1:	DI
 INT2:	DI
 	CLA
 	IN 4
-	ST $CACHE
 	SUB $X
 	CMP $L
 	BLT INF
