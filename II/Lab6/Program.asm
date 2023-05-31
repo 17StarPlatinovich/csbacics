@@ -53,7 +53,7 @@ INT1:	DI
 	NEG
 	SUB #5
 	OUT 2
-	HLT
+	NOP
 	IRET
 INT2:	DI
 	CLA
@@ -64,9 +64,9 @@ INT2:	DI
 	CMP $R
 	BGE INF
 	ST $X
-	HLT
+	NOP
 	IRET
 INF:	LD $L
 	ST $X
-	HLT
+	NOP
 	IRET
