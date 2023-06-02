@@ -58,7 +58,7 @@ T2:  LD A3
         LD A4
         PUSH
         LD #0x77
-        WORD 0x0F10 ; XORSP
+        WORD 0x0F10
         CMP #0x77
         BNE ERR2
         POP
@@ -81,7 +81,7 @@ T3:  LD A5
         LD A6
         PUSH
         LD #0x77
-        WORD 0x0F10 ; XORSP
+        WORD 0x0F10
         CMP #0x77
         BNE ERR3
         POP
