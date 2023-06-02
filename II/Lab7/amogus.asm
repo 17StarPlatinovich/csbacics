@@ -35,7 +35,7 @@ T1:  LD $X1
         LD $X2
         PUSH
         LD #0x77
-        WORD 0x0F01 ; XORSP
+        WORD 0x0F10 ; XORSP
         CMP #0x77
         BNE ERR1
         POP
@@ -58,7 +58,7 @@ T2:  LD $X3
         LD $X4
         PUSH
         LD #0x77
-        WORD 0x0F01 ; XORSP
+        WORD 0x0F10 ; XORSP
         CMP #0x77
         BNE ERR2
         POP
@@ -81,7 +81,7 @@ T3:  LD $X5
         LD $X6
         PUSH
         LD #0x77
-        WORD 0x0F01 ; XORSP
+        WORD 0x0F10 ; XORSP
         CMP #0x77
         BNE ERR3
         POP
