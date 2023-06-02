@@ -1,0 +1,276 @@
+[s372799@helios ~]$ cd OPD/lab0
+[s372799@helios ~/OPD/lab0]$ mkdir beautifly3
+[s372799@helios ~/OPD/lab0]$ mkdir dratini7
+[s372799@helios ~/OPD/lab0]$ touch krookodile2
+[s372799@helios ~/OPD/lab0]$ touch primeape7
+[s372799@helios ~/OPD/lab0]$ mkdir skuntank9
+[s372799@helios ~/OPD/lab0]$ touch tranquill9
+[s372799@helios ~/OPD/lab0]$ cd beautifly3
+[s372799@helios ~/OPD/lab0/beautifly3]$ mkdir scraggy
+[s372799@helios ~/OPD/lab0/beautifly3]$ mkdir kingdra
+[s372799@helios ~/OPD/lab0/beautifly3]$ touch floatzel
+[s372799@helios ~/OPD/lab0/beautifly3]$ touch loudred
+[s372799@helios ~/OPD/lab0/beautifly3]$ cd -
+/home/studs/s372799/OPD/lab0
+[s372799@helios ~/OPD/lab0]$ cd dratini7
+[s372799@helios ~/OPD/lab0/dratini7]$ touch charizard
+[s372799@helios ~/OPD/lab0/dratini7]$ mkdir wurmple
+[s372799@helios ~/OPD/lab0/dratini7]$ touch unfezant
+[s372799@helios ~/OPD/lab0/dratini7]$ mkdir probopass
+[s372799@helios ~/OPD/lab0/dratini7]$ touch aggron
+[s372799@helios ~/OPD/lab0/dratini7]$ touch krokorok
+[s372799@helios ~/OPD/lab0/dratini7]$ cd -
+/home/studs/s372799/OPD/lab0
+[s372799@helios ~/OPD/lab0]$ cd skuntank9
+[s372799@helios ~/OPD/lab0/skuntank9]$ mkdir stunky
+[s372799@helios ~/OPD/lab0/skuntank9]$ mkdir ekans
+[s372799@helios ~/OPD/lab0/skuntank9]$ mkdir marshtomp
+[s372799@helios ~/OPD/lab0/skuntank9]$ mkdir tentacruel
+[s372799@helios ~/OPD/lab0/skuntank9]$ touch swinub
+[s372799@helios ~/OPD/lab0/skuntank9]$ cd -
+/home/studs/s372799/OPD/lab0
+Результат: 
+[s372799@helios ~/OPD/lab0]$ ls -l
+total 27
+drwxr-xr-x  4 s372799  studs  6 22 сент. 16:08 beautifly3
+drwxr-xr-x  4 s372799  studs  8 22 сент. 16:09 dratini7
+-rw-r--r--  1 s372799  studs  0 22 сент. 16:05 krookodile2
+-rw-r--r--  1 s372799  studs  0 22 сент. 16:05 primeape7
+drwxr-xr-x  6 s372799  studs  7 22 сент. 16:09 skuntank9
+-rw-r--r--  1 s372799  studs  0 22 сент. 16:05 tranquill9
+1.2. Редактирование содержимого файла с помощью команды vi, исползуется в конце :wq!.
+Выводы:
+[s372799@helios ~/OPD/lab0/beautifly3]$ cat floatzel
+Возможности  Overland=8 Surface=10 Underwater=8 Jump3=0
+Power=2 Intelligence=4 Fountain=0
+[s372799@helios ~/OPD/lab0/beautifly3]$ cat loudred
+Способности  Uproar
+Astonish Howl Bite Supersonic Stomp Screech Roar Synchronoise Rest
+Sleep Talk Hyper Voice
+[s372799@helios ~/OPD/lab0/dratini7]$ cat charizard
+Возможности  Overland=6 Sky=10
+Jump=2 Power=4 Intelligence=4 Firestarter=0 Glow=0 Heater=0
+Sinker=0
+[s372799@helios ~/OPD/lab0/dratini7]$ cat unfezant
+Живет  Forest Grassland
+[s372799@helios ~/OPD/lab0/dratini7]$ cat aggron
+Живет  Cave
+Mountain
+[s372799@helios ~/OPD/lab0/dratini7]$ cat krokorok
+Тип диеты  Carnivore
+[s372799@helios ~/OPD/lab0]$ cat krookodile2
+Тип диеты
+Carnivore
+[s372799@helios ~/OPD/lab0]$ cat primeape7
+Возможности  Overland=8 Surface=7 Jump=5 Force=4
+Intelligence=4
+[s372799@helios ~/OPD/lab0]$ cd skuntank9
+[s372799@helios ~/OPD/lab0/skuntank9]$ cat swinub
+Способности  Freezing Point Landslide Oblivious
+Snow Cloak
+[s372799@helios ~/OPD/lab0]$ cat tranquill9
+Тип покемона  NORMAL FLYING
+[s372799@helios ~/OPD/lab0]$ chmod u+rx beautifly3
+[s372799@helios ~/OPD/lab0]$ chmod g+rwx beautifly3
+[s372799@helios ~/OPD/lab0]$ chmod o+x beautifly3 
+[s372799@helios ~/OPD/lab0]$ cd beautifly3
+[s372799@helios ~/OPD/lab0]$ chmod 752 scraggy
+[s372799@helios ~/OPD/lab0]$ chmod 571 kingdra
+[s372799@helios ~/OPD/lab0]$ chmod 664 floatzel
+[s372799@helios ~/OPD/lab0]$ chmod 046 loudred
+[s372799@helios ~/OPD/lab0]$ cd -
+[s372799@helios ~/OPD/lab0]$ chmod u+rx dratini7
+[s372799@helios ~/OPD/lab0]$ chmod g+wx dratini7
+[s372799@helios ~/OPD/lab0]$ chmod o+rwx dratini7
+[s372799@helios ~/OPD/lab0]$ cd dratini7
+[s372799@helios ~/OPD/lab0]$ chmod 724 charizard
+[s372799@helios ~/OPD/lab0]$ chmod 551 wurmple
+[s372799@helios ~/OPD/lab0]$ chmod 044 unfezant
+[s372799@helios ~/OPD/lab0]$ chmod 777 probopass
+[s372799@helios ~/OPD/lab0]$ chmod 005 aggron
+[s372799@helios ~/OPD/lab0]$ chmod a= krokorok
+[s372799@helios ~/OPD/lab0]$ chmod a+r krokorok
+[s372799@helios ~/OPD/lab0]$ cd –
+[s372799@helios ~/OPD/lab0]$ chmod a= krookodile2
+[s372799@helios ~/OPD/lab0]$ chmod uo+r krookodile2
+[s372799@helios ~/OPD/lab0]$ chmod 664 primeape7
+ [s372799@helios ~/OPD/lab0]$ chmod 737 skuntank9
+[s372799@helios ~/OPD/lab0]$ cd skuntank9
+[s372799@helios ~/OPD/lab0]$ chmod 752 stunky
+[s372799@helios ~/OPD/lab0]$ chmod 312 ekans
+[s372799@helios ~/OPD/lab0]$ chmod a= fraxure
+[s372799@helios ~/OPD/lab0]$ chmod u+rx fraxure
+[s372799@helios ~/OPD/lab0]$ chmod 737 marshtomp
+[s372799@helios ~/OPD/lab0]$ chmod 524 tentacruel
+[s372799@helios ~/OPD/lab0]$ chmod 640 swinub
+[s372799@helios ~/OPD/lab0]$ cd -
+[s372799@helios ~/OPD/lab0]$ chmod go+rw tranquill9 
+[s372799@helios ~/OPD/lab0]$ ln -s tranquill9 lab0/dratini7/aggrontranquill
+ln: lab0/dratini7/aggrontranquill: No such file or directory
+[s372799@helios ~/OPD/lab0]$ cd dratini7
+[s372799@helios ~/OPD/lab0/dratini7]$ touch aggrontranquill
+[s372799@helios ~/OPD/lab0/dratini7]$ cd -
+/home/studs/s372799/OPD/lab0
+[s372799@helios ~/OPD/lab0]$ ln -s tranquill9 dratini7/aggrontranquill
+ln: dratini7/aggrontranquill: File exists
+[s372799@helios ~/OPD/lab0]$ cd dratini7
+[s372799@helios ~/OPD/lab0/dratini7]$ rm aggrontranquill
+[s372799@helios ~/OPD/lab0/dratini7]$ cd -
+/home/studs/s372799/OPD/lab0
+[s372799@helios ~/OPD/lab0]$ ln -s tranquill9 dratini7/aggrontranquill
+[s372799@helios ~/OPD/lab0]$ ln primeape7 dratini7/aggronprimeape
+[s372799@helios ~/OPD/lab0]$ cd dratini7
+[s372799@helios ~/OPD/lab0/dratini7]$ touch krokorokkrookodile
+[s372799@helios ~/OPD/lab0/dratini7]$ cd -
+/home/studs/s372799/OPD/lab0
+[s372799@helios ~/OPD/lab0]$ cp krookodile2 dratini7/krokorokkrookodile
+[s372799@helios ~/OPD/lab0]$ cd dratini7
+[s372799@helios ~/OPD/lab0/dratini7]$ cat krokorokkrookodile
+Тип диеты
+Carnivore
+[s372799@helios ~/OPD/lab0/dratini7]$ cd -
+/home/studs/s372799/OPD/lab0
+[s372799@helios ~/OPD/lab0]$ ln -s dratini7 Copy_60 
+[s372799@helios ~/OPD/lab0]$ ls -l
+total 27
+drwxr-xr-x  4 s372799  studs   6 22 сент. 16:08 beautifly3
+drwxr-xr-x  4 s372799  studs  12 22 сент. 16:53 dratini7
+-rw-r--r--  1 s372799  studs  28 22 сент. 16:42 krookodile2
+-rw-r--r--  2 s372799  studs  75 22 сент. 16:43 primeape7
+drwxr-xr-x  6 s372799  studs   7 22 сент. 16:09 skuntank9
+-rw-r--r--  1 s372799  studs  39 22 сент. 16:44 tranquill9
+[s372799@helios ~/OPD/lab0]$ ln -s dratini7 Copy_60
+[s372799@helios ~/OPD/lab0]$ ls -l
+total 28
+drwxr-xr-x  4 s372799  studs   6 22 сент. 16:08 beautifly3
+lrwxr-xr-x  1 s372799  studs   8 22 сент. 16:55 Copy_60 -> dratini7
+drwxr-xr-x  4 s372799  studs  12 22 сент. 16:53 dratini7
+-rw-r--r--  1 s372799  studs  28 22 сент. 16:42 krookodile2
+-rw-r--r--  2 s372799  studs  75 22 сент. 16:43 primeape7
+drwxr-xr-x  6 s372799  studs   7 22 сент. 16:09 skuntank9
+-rw-r--r--  1 s372799  studs  39 22 сент. 16:44 tranquill9
+[s372799@helios ~/OPD/lab0]$ cp -r beautifly3 dratini7/wurmple
+[s372799@helios ~/OPD/lab0]$ touch tranquill9_83
+[s372799@helios ~/OPD/lab0]$ cat dratini7/aggron dratini7/unfezant tranquill9_83
+Живет  Cave
+Mountain
+Живет  Forest Grassland
+[s372799@helios ~/OPD/lab0]$ cat tranquill9_83
+[s372799@helios ~/OPD/lab0]$ cat dratini7/aggron dratini7/unfezant > tranquill9_83
+[s372799@helios ~/OPD/lab0]$ cat tranquill9_83
+Живет  Cave
+Mountain
+Живет  Forest Grassland
+[s372799@helios ~/OPD/lab0]$ cp krookodile2 skuntank9/tentacruel
+Иерархия файлов и каталогов, полученную при помощи команд ls -lR из директории lab0, после выполнения п.3 задания:
+[s372799@helios ~/OPD/lab0]$ ls -lR
+total 28
+dr-xrwx--x  4 s372799  studs   6  6 окт.  15:56 beautifly3
+lrwxr-xr-x  1 s372799  studs   8  6 окт.  16:18 Copy_60 -> dratini7
+dr-x-wxrwx  4 s372799  studs  11  6 окт.  16:17 dratini7
+-r-----r--  1 s372799  studs  28  6 окт.  16:10 krookodile2
+-rw-rw-r--  2 s372799  studs  75  6 окт.  16:07 primeape7
+drwx-wxrwx  7 s372799  studs   8  6 окт.  16:14 skuntank9
+----rw-rw-  1 s372799  studs  39  6 окт.  16:08 tranquill9
+-rw-r--r--  1 s372799  studs  55  6 окт.  16:23 tranquill9_83
+
+./beautifly3:
+total 10
+-rw-rw-r--  1 s372799  studs  101  6 окт.  16:00 floatzel
+dr-xrwx--x  2 s372799  studs    2  6 окт.  15:56 kingdra
+----r--rw-  1 s372799  studs  121  6 окт.  16:01 loudred
+drwxr-x-w-  2 s372799  studs    2  6 окт.  15:56 scraggy
+
+./beautifly3/kingdra:
+total 0
+
+./beautifly3/scraggy:
+total 0
+
+./dratini7:
+total 9
+-------r-x  1 s372799  studs   26  6 окт.  16:04 aggron
+-rw-rw-r--  2 s372799  studs   75  6 окт.  16:07 aggronprimeape
+lrwxr-xr-x  1 s372799  studs   10  6 окт.  16:16 aggrontranquill -> tranquill9
+-rwx-w-r--  1 s372799  studs  111  6 окт.  16:03 charizard
+-r--r--r--  1 s372799  studs   29  6 окт.  16:11 krokorok
+-rw-r--r--  1 s372799  studs   28  6 окт.  16:17 krokorokkrookodile
+drwxrwxrwx  2 s372799  studs    2  6 окт.  15:58 probopass
+----r--r--  1 s372799  studs   29  6 окт.  16:03 unfezant
+dr-xr-x--x  3 s372799  studs    3  6 окт.  16:21 wurmple
+
+./dratini7/probopass:
+total 0
+
+./dratini7/wurmple:
+total 9
+drwxr-xr-x  4 s372799  studs  6  6 окт.  16:21 beautifly3
+
+./dratini7/wurmple/beautifly3:
+total 10
+-rw-r--r--  1 s372799  studs  101  6 окт.  16:21 floatzel
+dr-xr-x--x  2 s372799  studs    2  6 окт.  16:21 kingdra
+-rwxr-xr-x  1 s372799  studs  121  6 окт.  16:21 loudred
+drwxr-x---  2 s372799  studs    2  6 окт.  16:21 scraggy
+
+./dratini7/wurmple/beautifly3/kingdra:
+total 0
+
+./dratini7/wurmple/beautifly3/scraggy:
+total 0
+
+./skuntank9:
+total 3
+d-wx--x-w-  2 s372799  studs   2  6 окт.  15:58 ekans
+dr-x------  2 s372799  studs   2  6 окт.  16:14 fraxure
+drwx-wxrwx  2 s372799  studs   2  6 окт.  15:59 marshtomp
+drwxr-x-w-  2 s372799  studs   2  6 окт.  15:58 stunky
+-rw-r-----  1 s372799  studs  70  6 окт.  16:08 swinub
+dr-x-w-r--  2 s372799  studs   3  6 окт.  16:25 tentacruel
+
+./skuntank9/ekans:
+total 0
+ls: ./skuntank9/ekans: Permission denied
+
+./skuntank9/fraxure:
+total 0
+
+./skuntank9/marshtomp:
+total 0
+
+./skuntank9/stunky:
+total 0
+
+./skuntank9/tentacruel:
+total 1
+-rwxr-xr-x  1 s372799  studs  28  6 окт.  16:25 krookodile2
+ls -lR |grep s$|wc -l|sort -r
+ls: ./skuntank9/ekans: Permission denied
+       2 
+[s372799@helios ~/OPD/lab0]$ ls -lRrt | grep -l ^t | 2>&1
+[s372799@helios ~/OPD/lab0/beautifly3]$ ls -lR|cat -n *|grep -i e$|2>/dev/null
+cat: kingdra: Is a directory
+cat: scraggy: Is a directory 
+     1  Способности  Uproar
+[s372799@helios ~/OPD/lab0]$ wc -m beautifly3/* dratini7/unfezant dratini7/aggron dratini7/krokorok | sort -n
+      21 dratini7/krokorok
+      22 dratini7/aggron
+      24 dratini7/unfezant
+      91 beautifly3/floatzel
+     100 dratini7/charizard
+     110 beautifly3/loudred
+     368 total
+[s372799@helios ~/OPD/lab0]$ ls -ltRr | grep ":[0-9][0-9] s" | tail -4 | 2>/tmp/s372799_log
+drwxr-x-w-  2 s372799  studs    2 19 окт.  17:24 scraggy
+drwxr-x-w-  2 s372799  studs   2 19 окт.  17:26 stunky
+-rw-r-----  1 s372799  studs  70 19 окт.  18:00 swinub
+drwxr-x---  2 s372799  studs    2 19 окт.  18:33 scraggy 
+[s372799@helios ~/OPD/lab0/beautifly3]$ wc -m floatzel loudred | 0>/tmp/s372799_log
+[s372799@helios ~/OPD/lab0]$ rm krookodile2
+[s372799@helios ~/OPD/lab0]$ rm dratini7/unfezant
+[s372799@helios ~/OPD/lab0]$ rm `echo Copy_*`
+[s372799@helios ~/OPD/lab0]$ rm dratini7/aggronprimea*
+[s372799@helios ~/OPD/lab0]$ rmdir skuntank9
+rmdir: skuntank9: Directory not empty
+[s372799@helios ~/OPD/lab0]$ rmdir skuntank9/ekans
+[s372799@helios ~/OPD/lab0]$ rm -r skuntank9
