@@ -1,100 +1,100 @@
-ORG  0x1F1
+ORG  0x1D0
 
-RE: WORD 0x0
+RES: WORD 0x0
 
-CH1: WORD 0x0
-CH2: WORD 0x0
-CH3: WORD 0x0
+CHECK1: WORD 0x0
+CHECK2: WORD 0x0
+CHECK3: WORD 0x0
 
-ANS1: WORD 0x0
-ANS2: WORD 0xFFFF
-ANS3: WORD 0x0006
+R1: WORD 0x0
+R2: WORD 0xFFFF
+R3: WORD 0x6
 
-A1: WORD 0x0
-A2: WORD 0x0
+ARG1: WORD 0x0
+ARG2: WORD 0x0
 
-A3: WORD 0xB00B
-A4: WORD 0x4FF4
+ARG3: WORD 0xB00B
+ARG4: WORD 0x4FF4
 
-A5: WORD 0x1337
-A6: WORD 0x0806
+ARG5: WORD 0x1337
+ARG6: WORD 0xA178
 
-ORG 0x0D1
-START:  CALL T1
-        CALL T2
-        CALL T3
+ORG 0x00D1
+START:  CALL TEST1
+        CALL TEST2
+        CALL TEST3
         LD #0x1
-        AND CH1
-        AND CH2
-        AND CH3
-        ST RE
+        AND CHECK1
+        AND CHECK2
+        AND CHECK3
+        ST RES
 STOP:   HLT 
 
-T1:  LD A1
+TEST1:  LD ARG1
         PUSH
-        LD A2
+        LD ARG2
         PUSH
         LD #0x77
-        WORD 0x0F10 ; XORSP
+        WORD 0x0F01 ; XORSP
         CMP #0x77
-        BNE ERR1
+        BNE ERROR1
         POP
-        ST CH1
-        CMP ANS1
+        ST CHECK1
+        CMP R1
         BEQ DONE1
-ERR1: POP
+ERROR1: POP
         POP
         CLA
         RET
 DONE1:  POP 
         POP 
         LD #0x1
-        ST CH1
+        ST CHECK1
         CLA 
         RET 
 
-T2:  LD A3
+TEST2:  LD ARG3
         PUSH
-        LD A4
+        LD ARG4
         PUSH
         LD #0x77
-        WORD 0x0F10
+        WORD 0x0F01 ; XORSP
         CMP #0x77
-        BNE ERR2
+        BNE ERROR2
         POP
-        ST CH2
-        CMP ANS2
+        ST CHECK2
+        CMP R2
         BEQ DONE2
-ERR2: POP
+ERROR2: POP
         POP
         CLA
         RET
 DONE2:  POP 
         POP 
         LD #0x1
-        ST CH2
+        ST CHECK2
         CLA 
         RET 
 
-T3:  LD A5
+TEST3:  LD ARG5
         PUSH
-        LD A6
+        LD ARG6
         PUSH
         LD #0x77
-        WORD 0x0F10
+        WORD 0x0F01 ; XORSP
         CMP #0x77
-        BNE ERR3
+        BNE ERROR3
         POP
-        ST CH3
-        CMP ANS3
+        ST CHECK3
+        CMP R3
         BEQ DONE3
-ERR3: POP
+ERROR3: POP
         POP
         CLA
         RET
 DONE3:  POP 
         POP 
         LD #0x1
-        ST CH3
+        ST CHECK3
         CLA 
         RET
