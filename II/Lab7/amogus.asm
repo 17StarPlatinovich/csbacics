@@ -1,100 +1,100 @@
-ORG  0x1D0
+ORG  0x069
 
-RES: WORD 0x0
+RE: WORD 0x0
 
-CHECK1: WORD 0x0
-CHECK2: WORD 0x0
-CHECK3: WORD 0x0
+CH1: WORD 0x0
+CH2: WORD 0x0
+CH3: WORD 0x0
 
-R1: WORD 0x0
-R2: WORD 0xFFFF
-R3: WORD 0x6
+ANS1: WORD 0x0
+ANS2: WORD 0xFFFF
+ANS3: WORD 0x7D9A
 
-ARG1: WORD 0x0
-ARG2: WORD 0x0
+X1: WORD 0x0
+X2: WORD 0x0
 
-ARG3: WORD 0xB00B
-ARG4: WORD 0x4FF4
+X3: WORD 0xB00B
+X4: WORD 0x4FF4
 
-ARG5: WORD 0x1337
-ARG6: WORD 0xA178
+X5: WORD 0xAAFF
+X6: WORD 0xD765
 
 ORG 0x00D1
-START:  CALL TEST1
-        CALL TEST2
-        CALL TEST3
+START:  CALL $T1
+        CALL $T2
+        CALL $T3
         LD #0x1
-        AND CHECK1
-        AND CHECK2
-        AND CHECK3
-        ST RES
+        AND $CH1
+        AND $CH2
+        AND $CH3
+        ST $RE
 STOP:   HLT 
 
-TEST1:  LD ARG1
+T1:  LD $X1
         PUSH
-        LD ARG2
+        LD $X2
         PUSH
         LD #0x77
         WORD 0x0F01 ; XORSP
         CMP #0x77
-        BNE ERROR1
+        BNE ERR1
         POP
-        ST CHECK1
-        CMP R1
-        BEQ DONE1
-ERROR1: POP
+        ST $CH1
+        CMP $ANS1
+        BEQ FINISH1
+ERR1: POP
         POP
         CLA
         RET
-DONE1:  POP 
+FINISH1:  POP 
         POP 
         LD #0x1
-        ST CHECK1
+        ST $CH1
         CLA 
         RET 
 
-TEST2:  LD ARG3
+T2:  LD $X3
         PUSH
-        LD ARG4
+        LD $X4
         PUSH
         LD #0x77
         WORD 0x0F01 ; XORSP
         CMP #0x77
-        BNE ERROR2
+        BNE ERR2
         POP
-        ST CHECK2
-        CMP R2
-        BEQ DONE2
-ERROR2: POP
+        ST $CH2
+        CMP $ANS2
+        BEQ FINISH2
+ERR2: POP
         POP
         CLA
         RET
-DONE2:  POP 
+FINISH2:  POP 
         POP 
         LD #0x1
-        ST CHECK2
+        ST $CH2
         CLA 
         RET 
 
-TEST3:  LD ARG5
+T3:  LD $X5
         PUSH
-        LD ARG6
+        LD $X6
         PUSH
         LD #0x77
         WORD 0x0F01 ; XORSP
         CMP #0x77
-        BNE ERROR3
+        BNE ERR3
         POP
-        ST CHECK3
-        CMP R3
-        BEQ DONE3
-ERROR3: POP
+        ST $CH3
+        CMP $ANS3
+        BEQ FINISH3
+ERR3: POP
         POP
         CLA
         RET
-DONE3:  POP 
+FINISH3:  POP 
         POP 
         LD #0x1
-        ST CHECK3
+        ST $CH3
         CLA 
         RET
