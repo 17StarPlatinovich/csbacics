@@ -21,8 +21,8 @@
 
 **Лектор**: [Клименков Сергей Викторович](https://my.itmo.ru/persons/148787)
 ![Кулич](https://github.com/XVIIStarPlatinum/ITMO/blob/master/img/memes/Kulich.jpg)
-**Практик**: Кулинич Ярослав Вадимович [(@Roggired)](https://github.com/Roggired) *(I семестр)*\
-**Практик**: [Ткешелашвили Нино Мерабиевна](https://my.itmo.ru/persons/153355) *(II семестр)*
+**Практик**: Кулинич Ярослав Вадимович [(@burevestnik-png)](https://github.com/burevestnik-png) *(I семестр)*\
+**Практик**: [Ткешелашвили Нино Мерабиевна](https://my.itmo.ru/persons/153355) ([@ninomt](https://github.com/ninomt)) *(II семестр)*
 
 > «Учите бэвм. мля.»\
 © Клименков С. В.
